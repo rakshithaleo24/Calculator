@@ -1,0 +1,70 @@
+package rakshi;
+import java.io.*;
+import java.util.*;
+import java.lang.Math;
+public class rakshi {
+	public static void main(String args[]) {
+	Scanner sc=new Scanner(System.in);
+	int a,b;
+	char op;
+	do {
+	System.out.println("Choose an operator");
+	System.out.println("Select 1 to add");
+	System.out.println("Select 2 to subtract");
+	System.out.println("Select 3 to multiply");
+	System.out.println("Select 4 to divide");
+	System.out.println("Select 5 to find exponent");
+	System.out.println("Select 6 to find log");
+	System.out.println("Press 7 to exit");
+	op=sc.next().charAt(0);
+	switch(op) {
+	case '1': 
+			System.out.println("Enter a number");
+			 a=sc.nextInt();
+			System.out.println("Enter second number");
+			 b=sc.nextInt();
+			System.out.println(a+b);
+			break;
+	case '2': 
+			System.out.println("Enter a number");
+			a=sc.nextInt();
+			System.out.println("Enter second number");
+			b=sc.nextInt();
+			System.out.println(a-b);
+			break;
+	case '3': 
+			System.out.println("Enter a number");
+			a=sc.nextInt();
+			System.out.println("Enter second number");
+			b=sc.nextInt();
+			System.out.println(a*b);
+			break;
+	case '4':
+			System.out.println("Enter a number");
+			a=sc.nextInt();
+			System.out.println("Enter second number");
+			b=sc.nextInt();
+			System.out.println(a/b);
+			break;
+	case '5':
+			System.out.println("Enter a number");
+			a=sc.nextInt();
+			System.out.println("Enter second number");
+			b=sc.nextInt();
+			System.out.println(Math.pow(a, b));
+			break;
+	case '6':
+			System.out.println("Enter a number");
+			a=sc.nextInt();
+			System.out.println("Enter second number");
+			b=sc.nextInt();
+            System.out.println(Math.log(a));
+			System.out.println(Math.log(b));
+			break;
+	case '7':
+				System.exit(0);
+				break;
+	}
+	} while(op!=7);
+}
+}
